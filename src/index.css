@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--font-sans: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	/* Theme color variables injected by ThemeProvider at runtime */
+	--color-primary: #0ea5e9;
+	--color-primaryLight: #38bdf8;
+	--color-primaryDark: #0284c7;
+	--color-secondary: #1e3a5f;
+	--color-accent: #00d4ff;
+	--color-accentGlow: rgba(0,212,255,0.3);
+	--color-bgDark: #050d1a;
+	--color-bgMid: #0a1628;
+	--color-bgLight: #0f2040;
+	--color-bgCard: rgba(14,40,80,0.6);
+	--color-bgGlass: rgba(255,255,255,0.05);
+	--color-textPrimary: #f0f8ff;
+	--color-textSecondary: #94c7e8;
+	--color-textMuted: #5a8aaa;
+	--color-border: rgba(14,165,233,0.25);
+	--color-borderGlow: rgba(0,212,255,0.5);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-sans);
+	background: var(--color-bgDark);
+	color: var(--color-textPrimary);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.glass {
+	background: var(--color-bgGlass);
+	backdrop-filter: blur(8px);
+	border: 1px solid var(--color-border);
+}
+
+.card-gradient {
+	background: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+
+.glow {
+	box-shadow: 0 8px 30px var(--color-accentGlow);
+}
