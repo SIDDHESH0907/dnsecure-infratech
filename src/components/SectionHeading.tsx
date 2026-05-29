@@ -13,17 +13,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({ label, title, subtitle,
 
   return (
     <div className={`mb-14 ${center ? 'text-center' : ''}`}>
-      <div
-        className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-4 text-xs font-semibold tracking-widest uppercase ${center ? '' : ''}`}
-        style={{
-          background: `${theme.colors.primary}15`,
-          border: `1px solid ${theme.colors.border}`,
-          color: theme.colors.primary,
-        }}
-      >
-        <span className="w-1.5 h-1.5 rounded-full" style={{ background: theme.colors.accent }} />
-        {label}
-      </div>
+      {/* section label removed as requested */}
       <h2
         className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-4"
         style={{ color: theme.colors.textPrimary }}

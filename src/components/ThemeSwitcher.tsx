@@ -6,14 +6,12 @@ const ThemeSwitcher: React.FC = () => {
   const { theme, setThemeByName } = useTheme();
 
   const cycle = () => {
-    // Cycle order: dark-blue -> light-blue -> light-red -> red -> dark-blue
-    if (theme.name === 'blue') setThemeByName('light');
-    else if (theme.name === 'light') setThemeByName('light-red');
-    else if (theme.name === 'light-red') setThemeByName('red');
+    // Cycle order: dark-blue <-> red
+    if (theme.name === 'blue') setThemeByName('red');
     else setThemeByName('blue');
   };
 
-  const label = theme.name === 'light' ? 'Light' : theme.name === 'light-red' ? 'Light-Red' : theme.name === 'red' ? 'Red' : 'Dark';
+  const label = theme.name === 'red' ? 'Red' : 'Dark';
 
   return (
     <button
@@ -27,8 +25,7 @@ const ThemeSwitcher: React.FC = () => {
       aria-label="Toggle theme"
       title={`Theme: ${label} — click to cycle`}
     >
-      {theme.name === 'light' || theme.name === 'light-red' ? <Sun size={16} /> : <Moon size={16} />}
-      <span className="hidden sm:inline">{label}</span>
+      <Moon size={16} />
     </button>
   );
 };

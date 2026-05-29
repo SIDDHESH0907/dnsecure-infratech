@@ -6,7 +6,7 @@ import ParticleBackground from './ParticleBackground';
 import { useCounter } from '../hooks/useCounter';
 
 const stats = [
-  { icon: Shield, label: 'Years Experience', value: 2, suffix: '+' },
+  { icon: Shield, label: 'Years Experience', value: 4, suffix: '+' },
   { icon: Users, label: 'Clients Served', value: 50, suffix: '+' },
   { icon: Activity, label: 'Retention Rate', value: 95, suffix: '%' },
 ];
@@ -89,24 +89,7 @@ const Hero: React.FC = () => {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-16">
         {/* Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8"
-          style={{
-            background: `${theme.colors.primary}15`,
-            border: `1px solid ${theme.colors.border}`,
-          }}
-        >
-          <span
-            className="w-2 h-2 rounded-full animate-pulse"
-            style={{ background: theme.colors.accent }}
-          />
-          <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: theme.colors.primary }}>
-            Enterprise Cybersecurity Solutions
-          </span>
-        </motion.div>
+        {/* badge removed as requested */}
 
         {/* Heading */}
         <motion.h1
@@ -190,23 +173,7 @@ const Hero: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.button
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-        onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1"
-        style={{ color: theme.colors.textMuted }}
-      >
-        <span className="text-xs tracking-widest uppercase">Scroll</span>
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-        >
-          <ChevronDown size={20} />
-        </motion.div>
-      </motion.button>
+      {/* Scroll indicator removed per request */}
     </section>
   );
 };

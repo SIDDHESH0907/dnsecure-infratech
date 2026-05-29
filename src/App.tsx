@@ -6,7 +6,6 @@ import About from './sections/About';
 import Partners from './sections/Partners';
 import Solutions from './sections/Solutions';
 import WhyChooseUs from './sections/WhyChooseUs';
-import Testimonials from './sections/Testimonials';
 import Industries from './sections/Industries';
 import Contact from './sections/Contact';
 import Footer from './components/Footer';
@@ -27,7 +26,6 @@ function App() {
       <Solutions />
       <WhyChooseUs />
       <Industries />
-      <Testimonials />
       <Contact />
 
       <Footer />

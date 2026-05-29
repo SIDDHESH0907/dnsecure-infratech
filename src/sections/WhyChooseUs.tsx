@@ -41,7 +41,7 @@ const features = [
 ];
 
 const counters = [
-  { value: 2, suffix: '+', label: 'Years Experience' },
+  { value: 4, suffix: '+', label: 'Years Experience' },
   { value: 50, suffix: '+', label: 'Clients Served' },
   { value: 8, suffix: '', label: 'Industries' },
   { value: 95, suffix: '%', label: 'Retention Rate' },

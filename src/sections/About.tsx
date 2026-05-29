@@ -8,7 +8,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 import { useCounter } from '../hooks/useCounter';
 
 const statItems = [
-  { icon: Award, value: 2, suffix: '+', label: 'Years Experience', sub: 'In enterprise IT & security' },
+  { icon: Award, value: 4, suffix: '+', label: 'Years Experience', sub: 'In enterprise IT & security' },
   { icon: Users, value: 50, suffix: '+', label: 'Clients Served', sub: 'Across 8 industries' },
   { icon: TrendingUp, value: 95, suffix: '%', label: 'Client Retention', sub: 'Long-term partnerships' },
 ];
@@ -69,7 +69,7 @@ const About: React.FC = () => {
           <SectionHeading
             label="About Us"
             title="Trusted Cybersecurity Partner Since 2022"
-            subtitle="For over 2 years, DN Secure InfraTech has been a trusted provider of reliable IT and cybersecurity solutions to organizations across India."
+            subtitle="For over 4 years, DN Secure InfraTech has been a trusted provider of reliable IT and cybersecurity solutions to organizations across India."
             center={false}
           />
 

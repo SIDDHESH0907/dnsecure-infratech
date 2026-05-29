@@ -15,7 +15,7 @@ const Testimonials: React.FC = () => {
 
   return (
     <SectionWrapper id="testimonials" alternate>
-      <SectionHeading label="Testimonials" title="Trusted By Our Clients" subtitle="What our customers say about DN Secure InfraTech" />
+      <SectionHeading label="Testimonials" title="" subtitle="What our customers say about DN Secure InfraTech" />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {testimonials.map((t, i) => (

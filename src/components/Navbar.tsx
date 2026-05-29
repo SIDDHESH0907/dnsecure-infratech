@@ -107,16 +107,7 @@ const Navbar: React.FC = () => {
                   />
                 </button>
               ))}
-              <button
-                onClick={() => handleNavClick('#contact')}
-                className="ml-4 px-5 py-2 rounded-lg text-sm font-semibold text-white transition-all duration-200 hover:scale-105"
-                style={{
-                  background: theme.colors.gradientButton,
-                  boxShadow: `0 4px 15px ${theme.colors.accentGlow}`,
-                }}
-              >
-                Get Started
-              </button>
+              {/* Get Started button removed per request */}
               <div className="ml-3">
                 <ThemeSwitcher />
               </div>
@@ -170,13 +161,7 @@ const Navbar: React.FC = () => {
                 ))}
               </div>
               <div className="mt-auto">
-                <button
-                  onClick={() => handleNavClick('#contact')}
-                  className="w-full py-4 rounded-xl text-white font-semibold text-lg"
-                  style={{ background: theme.colors.gradientButton }}
-                >
-                  Get Started
-                </button>
+                {/* mobile Get Started removed per request */}
                 <div className="mt-3">
                   <ThemeSwitcher />
                 </div>

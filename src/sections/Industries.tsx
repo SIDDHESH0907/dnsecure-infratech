@@ -12,15 +12,34 @@ const Industries: React.FC = () => {
     <SectionWrapper id="industries">
       <SectionHeading label="Industries" title="Industries We Serve" subtitle="Tailored cybersecurity and infrastructure solutions for a wide range of sectors." />
 
-      <div className="overflow-x-auto py-4">
-        <div className="flex gap-4 px-2">
-          {industries.map((ind) => (
-            <div key={ind} className="min-w-[160px] p-6 rounded-2xl glass flex-shrink-0 text-center" style={{ border: `1px solid ${theme.colors.border}` }}>
-              <div className="text-lg font-bold mb-2" style={{ color: theme.colors.textPrimary }}>{ind}</div>
-              <div className="text-xs" style={{ color: theme.colors.textSecondary }}>Custom solutions for {ind}</div>
-            </div>
-          ))}
+      <div className="py-4 -mx-4 sm:-mx-6 lg:-mx-8">
+        <div className="w-full overflow-hidden">
+          <div
+            className="scrolling flex items-center"
+            style={{ animationDuration: '30s' }}
+            aria-hidden={false}
+            role="list"
+          >
+            {[...industries, ...industries].map((ind, idx) => (
+              <div
+                key={`${ind}-${idx}`}
+                className="min-w-[220px] p-4 rounded-2xl glass text-center"
+                style={{ border: `1px solid ${theme.colors.border}` }}
+                role="listitem"
+              >
+                <div className="text-lg font-bold" style={{ color: theme.colors.textPrimary }}>{ind}</div>
+              </div>
+            ))}
+          </div>
         </div>
+
+        <style>{`
+          .scrolling { gap: 1.5rem; align-items: center; display: flex; white-space: nowrap; }
+          .scrolling { animation-name: scroll-left; animation-timing-function: linear; animation-iteration-count: infinite; }
+          @keyframes scroll-left { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+          /* Reduce motion for users who prefer reduced motion */
+          @media (prefers-reduced-motion: reduce) { .scrolling { animation: none; } }
+        `}</style>
       </div>
     </SectionWrapper>
   );

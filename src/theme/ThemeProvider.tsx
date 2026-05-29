@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { defaultTheme, redTheme, lightTheme, lightRedTheme, Theme } from './config';
+import { defaultTheme, redTheme, Theme } from './config';
 
 type ThemeContextValue = {
   theme: Theme;
@@ -11,8 +11,6 @@ type ThemeContextValue = {
 const themes: Record<string, Theme> = {
   [defaultTheme.name]: defaultTheme,
   [redTheme.name]: redTheme,
-  [lightTheme.name]: lightTheme,
-  [lightRedTheme.name]: lightRedTheme,
 };
 
 const defaultContext: ThemeContextValue = {
