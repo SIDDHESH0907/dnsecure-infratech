@@ -65,23 +65,33 @@ const Navbar: React.FC = () => {
               className="flex items-center gap-3 group"
             >
               <div
-                className="w-9 h-9 rounded-lg flex items-center justify-center relative"
+                className="w-9 h-9 rounded-lg flex items-center justify-center relative overflow-hidden"
                 style={{
                   background: theme.colors.gradientButton,
                   boxShadow: `0 0 20px ${theme.colors.accentGlow}`,
                 }}
               >
-                <Shield size={20} color="#fff" strokeWidth={2.5} />
+                <img
+                  src="/main-logo.png"
+                  alt="DN Secure InfraTech logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="flex flex-col leading-tight">
                 <span
                   className="font-bold text-base tracking-wide"
                   style={{ color: theme.colors.textPrimary }}
                 >
-                  DN Secure
+                  DNA SECURE
                 </span>
+                {/* <span
+                  className="font-bold text-base tracking-wide"
+                  style={{ color: theme.colors.textPrimary }}
+                >
+                  InfraTech
+                </span> */}
                 <span
-                  className="text-xs font-medium tracking-widest uppercase"
+                  className="text-xs font-bold tracking-widest uppercase"
                   style={{ color: theme.colors.primary }}
                 >
                   InfraTech
