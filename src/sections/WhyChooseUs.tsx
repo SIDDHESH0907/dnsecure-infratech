@@ -126,7 +126,7 @@ const WhyChooseUs: React.FC = () => {
     <SectionWrapper id="why-us">
       <SectionHeading
         label="Why Choose Us"
-        title="The DN Secure InfraTech Advantage"
+        title="The DNA Secure InfraTech Advantage"
         subtitle="We combine technical excellence with business acumen to deliver cybersecurity and infrastructure solutions that make a real difference."
       />
 

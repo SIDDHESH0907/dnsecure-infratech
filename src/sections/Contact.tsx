@@ -101,7 +101,7 @@ const Contact: React.FC = () => {
           <div className="space-y-4" style={{ color: theme.colors.textSecondary }}>
             <div>
               <div className="text-xs uppercase tracking-[0.2em] mb-1" style={{ color: theme.colors.textMuted }}>Email</div>
-              <p>contact@dnsecureinfratech.com</p>
+              <p>support@dnasecureinfratech.com</p>
             </div>
             <div>
               <div className="text-xs uppercase tracking-[0.2em] mb-1" style={{ color: theme.colors.textMuted }}>Phone</div>

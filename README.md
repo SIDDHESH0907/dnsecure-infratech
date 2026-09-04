@@ -1,4 +1,4 @@
-Create a modern, premium, responsive single-page cybersecurity freelancing website for a company named **DN Secure InfraTech**.
+Create a modern, premium, responsive single-page cybersecurity freelancing website for a company named **DNA Secure InfraTech**.
 
 The design should be inspired by enterprise cybersecurity and IT infrastructure companies like Pentagon System & Services, Palo Alto Networks, Fortinet, and Cisco.
 
@@ -86,7 +86,7 @@ Add modern motion effects and subtle glowing UI.
 
 Content:
 
-“For over 4 years, DN Secure InfraTech has been a trusted provider of reliable IT and cybersecurity solutions to organizations across India. We focus on delivering secure, scalable, and future-ready infrastructure solutions tailored for modern businesses.”
+“For over 4 years, DNA Secure InfraTech has been a trusted provider of reliable IT and cybersecurity solutions to organizations across India. We focus on delivering secure, scalable, and future-ready infrastructure solutions tailored for modern businesses.”
 
 Display:
 
@@ -294,7 +294,7 @@ IMPORTANT DEVELOPMENT REQUIREMENTS
 * Add proper responsive behavior
 
 Website Name:
-DN Secure InfraTech
+DNA Secure InfraTech
 
 Domain:
 dnsecureinfratech.com

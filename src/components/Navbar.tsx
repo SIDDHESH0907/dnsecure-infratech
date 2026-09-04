@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
               >
                 <img
                   src="/main-logo.png"
-                  alt="DN Secure InfraTech logo"
+                  alt="DNA Secure InfraTech logo"
                   className="w-full h-full object-cover"
                 />
               </div>

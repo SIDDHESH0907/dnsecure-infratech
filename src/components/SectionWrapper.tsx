@@ -26,7 +26,7 @@ const SectionWrapper: React.FC<SectionWrapperProps> = ({ id, children, className
         initial={{ opacity: 0, y: 40 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 ${className}`}
+        className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-12 ${className}`}
       >
         {children}
       </motion.div>

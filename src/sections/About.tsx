@@ -69,7 +69,7 @@ const About: React.FC = () => {
           <SectionHeading
             label="About Us"
             title="Trusted Cybersecurity Partner Since 2022"
-            subtitle="For over 4 years, DN Secure InfraTech has been a trusted provider of reliable IT and cybersecurity solutions to organizations across India."
+            subtitle="For over 4 years, DNA Secure InfraTech has been a trusted provider of reliable IT and cybersecurity solutions to organizations across India."
             center={false}
           />
 

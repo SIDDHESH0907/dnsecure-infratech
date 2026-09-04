@@ -4,8 +4,8 @@ import { useTheme } from '../theme/ThemeProvider';
 
 const WhatsAppButton: React.FC = () => {
   const { theme } = useTheme();
-  const phone = '919999999999'; // replace with real number
-  const text = encodeURIComponent('Hello DN Secure InfraTech — I would like to inquire about your services.');
+  const phone = '7208155294'; // replace with real number
+  const text = encodeURIComponent('Hello DNA Secure InfraTech — I would like to inquire about your services.');
   const href = `https://wa.me/${phone}?text=${text}`;
 
   return (
