@@ -6,11 +6,11 @@ import SectionHeading from '../components/SectionHeading';
 // Use the built files from `public/partners/` (served from `/partners/*` in Vite)
 const partners = [
   { name: 'Fortinet', logo: '/partners/img11.16067ada.svg' },
-  { name: 'Check Point', logo: '/partners/checkpoint-logo.svg' },
+  { name: 'Check Point', logo: '/partners/CHKP_BIG.D.svg' },
   { name: 'Palo Alto', logo: '/partners/img17.ed8a645c.svg' },
   { name: 'Cisco', logo: '/partners/cisco-ar21.svg' },
   { name: 'F5 Networks', logo: '/partners/F5_Networks-Logo.wine.svg' },
-  { name: 'AWS', logo: '/partners/icons8-aws-logo.svg' },
+  { name: 'AWS', logo: '/partners/aws-svgrepo-com.svg' },
   { name: 'Partner 5', logo: '/partners/img12.e11fa515.svg' },
   { name: 'Cisco Partner', logo: '/partners/img24.f11dabfd.svg' },
   { name: 'D-Link', logo: '/partners/img25.5a0fc09d.svg' },

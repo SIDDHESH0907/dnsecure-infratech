@@ -1,17 +1,18 @@
 import React from 'react';
-import { Sun, Moon } from 'lucide-react';
+import { Circle, Moon, Sun } from 'lucide-react';
 import { useTheme } from '../theme/ThemeProvider';
 
 const ThemeSwitcher: React.FC = () => {
   const { theme, setThemeByName } = useTheme();
 
   const cycle = () => {
-    // Cycle order: dark-blue <-> red
     if (theme.name === 'blue') setThemeByName('red');
+    else if (theme.name === 'red') setThemeByName('white');
     else setThemeByName('blue');
   };
 
-  const label = theme.name === 'red' ? 'Red' : 'Dark';
+  const label = theme.name === 'red' ? 'Red' : theme.name === 'white' ? 'White' : 'Dark blue';
+  const Icon = theme.name === 'white' ? Sun : theme.name === 'red' ? Circle : Moon;
 
   return (
     <button
@@ -25,7 +26,7 @@ const ThemeSwitcher: React.FC = () => {
       aria-label="Toggle theme"
       title={`Theme: ${label} — click to cycle`}
     >
-      <Moon size={16} />
+      <Icon size={16} />
     </button>
   );
 };

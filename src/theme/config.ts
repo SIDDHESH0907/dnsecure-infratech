@@ -100,8 +100,40 @@ export const redTheme: Theme = {
 };
 
 // ============================================================
+// LIGHT THEME: White + Blue + Charcoal
+// ============================================================
+export const whiteTheme: Theme = {
+  name: 'white',
+  colors: {
+    primary: '#0284c7',
+    primaryLight: '#0ea5e9',
+    primaryDark: '#0369a1',
+    secondary: '#e0f2fe',
+    accent: '#0891b2',
+    accentGlow: 'rgba(8,145,178,0.22)',
+    bgDark: '#f8fafc',
+    bgMid: '#ffffff',
+    bgLight: '#e0f2fe',
+    bgCard: 'rgba(255,255,255,0.86)',
+    bgGlass: 'rgba(15,23,42,0.04)',
+    textPrimary: '#0f172a',
+    textSecondary: '#334155',
+    textMuted: '#64748b',
+    border: 'rgba(2,132,199,0.22)',
+    borderGlow: 'rgba(8,145,178,0.38)',
+    gradientHero: 'linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #e0f2fe 100%)',
+    gradientCard: 'linear-gradient(135deg, rgba(2,132,199,0.08) 0%, rgba(8,145,178,0.04) 100%)',
+    gradientButton: 'linear-gradient(135deg, #0284c7 0%, #0891b2 100%)',
+    gradientTextStart: '#0369a1',
+    gradientTextEnd: '#0891b2',
+    success: '#059669',
+    warning: '#d97706',
+    error: '#dc2626',
+  },
+};
+
+// ============================================================
 // ACTIVE THEME — Change this to switch themes globally
-// Options: defaultTheme | redTheme
+// Options: defaultTheme | redTheme | whiteTheme
 // ============================================================
 export const activeTheme: Theme = defaultTheme;
-// (Light variants removed to simplify available themes)

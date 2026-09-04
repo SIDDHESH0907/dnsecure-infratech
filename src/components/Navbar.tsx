@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
   };
 
   const scrolledBg = scrolled
-    ? theme.name && theme.name.includes('light')
+    ? theme.name === 'white'
       ? `rgba(255,255,255,0.92)`
       : `rgba(5, 13, 26, 0.95)`
     : 'transparent';
@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
           backdropFilter: scrolledBackdrop,
           borderBottom: scrolled ? `1px solid ${theme.colors.border}` : 'none',
           boxShadow: scrolled
-            ? theme.name && theme.name.includes('light')
+            ? theme.name === 'white'
               ? `0 4px 20px rgba(0,0,0,0.06)`
               : `0 4px 30px rgba(0,0,0,0.4)`
             : 'none',
@@ -145,8 +145,8 @@ const Navbar: React.FC = () => {
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="fixed inset-0 z-40 lg:hidden"
             style={{
-              background: theme.name && theme.name.includes('light') ? 'rgba(255,255,255,0.98)' : `rgba(5, 13, 26, 0.98)`,
-              backdropFilter: theme.name && theme.name.includes('light') ? 'none' : 'blur(20px)',
+              background: theme.name === 'white' ? 'rgba(255,255,255,0.98)' : `rgba(5, 13, 26, 0.98)`,
+              backdropFilter: theme.name === 'white' ? 'none' : 'blur(20px)',
             }}
           >
             <div className="flex flex-col h-full pt-24 pb-8 px-6">

@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { defaultTheme, redTheme, Theme } from './config';
+import { defaultTheme, redTheme, whiteTheme, Theme } from './config';
 
 type ThemeContextValue = {
   theme: Theme;
@@ -11,6 +11,7 @@ type ThemeContextValue = {
 const themes: Record<string, Theme> = {
   [defaultTheme.name]: defaultTheme,
   [redTheme.name]: redTheme,
+  [whiteTheme.name]: whiteTheme,
 };
 
 const defaultContext: ThemeContextValue = {
@@ -59,7 +60,11 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   };
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev.name === defaultTheme.name ? redTheme : defaultTheme));
+    setTheme((prev) => {
+      if (prev.name === defaultTheme.name) return redTheme;
+      if (prev.name === redTheme.name) return whiteTheme;
+      return defaultTheme;
+    });
   };
 
   const ctx: ThemeContextValue = {

@@ -14,7 +14,10 @@ import ScrollTop from './components/ScrollTop';
 
 function App() {
   return (
-    <div className="min-h-screen text-white" style={{ background: 'var(--color-bgDark)' }}>
+    <div
+      className="min-h-screen"
+      style={{ background: 'var(--color-bgDark)', color: 'var(--color-textPrimary)' }}
+    >
       <Navbar />
 
       {/* HERO */}

@@ -108,7 +108,7 @@ const Hero: React.FC = () => {
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
               // Add subtle text-shadow on light themes to preserve contrast
-              textShadow: theme.name && theme.name.includes('light') ? '0 1px 0 rgba(255,255,255,0.7), 0 2px 8px rgba(0,0,0,0.06)' : 'none',
+              textShadow: theme.name === 'white' ? '0 1px 0 rgba(255,255,255,0.7), 0 2px 8px rgba(0,0,0,0.06)' : 'none',
             }}
           >
             Digital Infrastructure

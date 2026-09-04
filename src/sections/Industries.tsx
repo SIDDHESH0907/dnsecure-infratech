@@ -3,7 +3,7 @@ import SectionWrapper from '../components/SectionWrapper';
 import SectionHeading from '../components/SectionHeading';
 import { useTheme } from '../theme/ThemeProvider';
 
-const industries = ['Banking', 'Healthcare', 'Manufacturing', 'Education', 'IT Companies', 'Logistics', 'Retail', 'Startups'];
+const industries = ['Banking', 'Healthcare', 'Manufacturing', 'Education', 'IT Companies', 'Logistics', 'Retail', 'Startups','Banking', 'Healthcare', 'Manufacturing', 'Education', 'IT Companies', 'Logistics', 'Retail', 'Startups','Banking', 'Healthcare', 'Manufacturing', 'Education', 'IT Companies', 'Logistics', 'Retail', 'Startups','Banking', 'Healthcare', 'Manufacturing', 'Education', 'IT Companies', 'Logistics', 'Retail', 'Startups','Banking', 'Healthcare', 'Manufacturing', 'Education', 'IT Companies', 'Logistics', 'Retail', 'Startups','Banking', 'Healthcare', 'Manufacturing', 'Education', 'IT Companies', 'Logistics', 'Retail', 'Startups'];
 
 const Industries: React.FC = () => {
   const { theme } = useTheme();
